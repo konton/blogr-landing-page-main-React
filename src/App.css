@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+
+:root{
+  --Lightred: hsl(353, 100%, 62%);
+  --Verylightred: hsl(13, 100%, 72%);
+  --Verydarkblue: hsl(208, 49%, 24%);
+  --White: hsl(0, 0%, 100%);
+  --Grayishblue: hsl(240, 2%, 79%);
+  --Verydarkgrayishblue: hsl(207, 13%, 34%);
+  --Verydarkblackblue: hsl(240, 10%, 16%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,body{
+  margin: 0;
+  height: 100%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root, .App{
+  height: 100%;
+}
+
+/* Navbar */
+
+header{
+  background-image: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(to right, var(--Verylightred), var(--Lightred));
+  background-position: 15% 49% , center;
+  background-size: 200%, 100%;
+  background-repeat: no-repeat;
+  height: 60%;
+  border-bottom-left-radius: 100px;
+  
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+.left-nav{
+  display: flex;
+  flex-direction: row;
+}
+.navlink{
+  list-style-type: none;
+  display: flex;
+  gap: 35px;
+}
+.link a{
+  text-decoration: none;
+  color: var(--White);
+}
+
+.right-nav{
+  gap: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.sign, .login{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+.login{
+  color: var(--White);
+}
+
+
+.sign{
+  color: var(--Lightred);
+  background-color: var(--White);
+  border: none;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+}
+
+.title{
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
+  height: 50%;
+  font-family: 'Overpass', sans-serif;
+  color: var(--White);
+  font-weight: 400;
+
+}
+
+.header h1{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.header-btn{
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header-btn button{
+  border-radius: 30px;
+  padding: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.startbtn{
+  background-color: var(--White);
+  border: none;
+  color: var(--Lightred);
+}
+
+.learnbtn{
+  background-color: transparent;
+  border: 2px solid var(--White);
+  color: var(--White);
 }
