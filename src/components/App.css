@@ -29,7 +29,7 @@ html,body{
 /* Navbar */
 
 header{
-  background-image: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(to right, var(--Verylightred), var(--Lightred));
+  background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(to right, var(--Verylightred), var(--Lightred));
   background-position: 15% 49% , center;
   background-size: 200%, 100%;
   background-repeat: no-repeat;
@@ -230,4 +230,43 @@ nav{
 
 .second-con p{
   line-height: 1.6rem;
+}
+
+
+.third{
+  height: 100%;
+  margin-top: 100px;
+
+}
+
+.third-con{
+  display: flex;
+  flex-direction: row;
+}
+
+.third-con img{
+  width: 80%;
+  position: relative;
+  left: -275px;
+}
+
+.third-con-para{
+  margin-right: 20%;
+  margin-top: 150px;
+}
+
+.third-con-para-one, .third-con-para-two{
+  line-height: 1.8rem;
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  margin-right: 50px;
+  color: var(--Verydarkblue);
+}
+
+.third-con-para-one h3, .third-con-para-two h3{ 
+  font-size: 30px;
+}
+
+.third-con-para-two{
+  margin-top: 50px;
 }
