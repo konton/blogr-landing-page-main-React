@@ -57,9 +57,11 @@ nav{
 }
 
 .right-nav{
+  width: 30%;
   gap: 25px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 }
 
 
