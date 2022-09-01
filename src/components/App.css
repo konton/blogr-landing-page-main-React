@@ -20,11 +20,9 @@ html,body{
 
 *{
   font-size: 16px;
+  box-sizing: border-box;
 }
 
-#root, .App{
-  height: 100%;
-}
 
 /* Navbar */
 
@@ -33,7 +31,7 @@ header{
   background-position: 15% 49% , center;
   background-size: 200%, 100%;
   background-repeat: no-repeat;
-  height: 60%;
+  height: 70vh;
   border-bottom-left-radius: 100px;
   
 }
@@ -192,14 +190,14 @@ nav{
 .insidefirst {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* Second */
 
 .second{
   background-color: var(--Verydarkgrayishblue);
-  height: 40%;
+  height: 45vh;
   width: 100%;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -269,4 +267,37 @@ nav{
 
 .third-con-para-two{
   margin-top: 50px;
+}
+
+
+/* Footer */
+
+footer{
+  background-color: var(--Verydarkblackblue);
+  width: 100%;
+  height: 40vh;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  color: var(--White);
+  justify-content: space-evenly;
+  padding-top: 70px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.Product{
+  text-align: left;
+}
+.Product ul,.Company ul,.Connect ul{
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.Product ul li,.Company ul li,.Connect ul li{
+  font-weight: 400;
+  margin-top: 20px;
+  color: var(--Grayishblue);
 }
