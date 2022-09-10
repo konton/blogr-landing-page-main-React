@@ -7,6 +7,7 @@ const Title = () => {
 
     return (
         <div className='title'>
+          
             <div className="header">
                 <h1>A modern publishing platform</h1>
                 <p>Grow your audience and build your online brand</p>

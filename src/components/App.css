@@ -37,11 +37,12 @@ header{
   border-bottom-left-radius: 100px;
   
 }
-nav{
+.Nav{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 40px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .left-nav{
@@ -88,7 +89,7 @@ nav{
 }
 
 .title{
-  height: 80%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,6 +323,13 @@ footer{
 .laptopmobile{
   display: none;
 }
+
+
+.disable{
+  display: none;
+}
+
+
 @media screen and (max-width: 375px){
   .navlink{
     display: none;
@@ -451,6 +459,79 @@ footer{
   .Product{
     text-align: center;
   }
+  .menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    margin-top: 10px;
+  }
 
+  .menulist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--White);    
+    width: 80%;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
 
+  }
+
+  .mnavlink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    width: 80%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--Grayishblue);
+  }
+
+  .mlink{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+  }
+  .mlink a{
+    text-decoration: none;
+    color: var(--Verydarkblackblue);
+  }
+
+  .mlink img{
+    width: 8%;
+  }
+
+  .mnav-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .login{
+    color: var(--Verydarkblackblue);
+    font-family: 'Overpass', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .disable{
+    display: none;
+  }
+  .sign{
+    font-size: 20px;
+    color: var(--White);
+    background-image: linear-gradient(to right, var(--Verylightred), var(--Lightred));
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
