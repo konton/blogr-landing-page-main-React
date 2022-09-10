@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css';
 import arrow from '../images/icon-arrow-light.svg'
-
+import { Button } from './Button';
 
 const Nav = () => {
 
@@ -17,7 +17,7 @@ const Nav = () => {
             </div>
             <div className='right-nav'>
                 <p className='login'>Login</p>
-                <button className='sign'>Sign Up</button>
+                <Button class='sign'>Sign Up</Button>
             </div>
         </nav>
     )

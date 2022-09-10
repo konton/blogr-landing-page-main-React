@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
-
+import { Button } from './Button';
 
 
 const Title = () => {
@@ -11,8 +11,10 @@ const Title = () => {
                 <h1>A modern publishing platform</h1>
                 Grow your audience and build your online brand
                 <div className="header-btn">
-                    <button className='startbtn'>Start for Free</button>
-                    <button className='learnbtn'>Learn More</button>
+                    <Button class='startbtn'>Start for Free</Button>
+                    <Button class='learnbtn'>Learn More</Button>
+                    {/* <button className='startbtn'>Start for Free</button> */}
+                    {/* <button className='learnbtn'>Learn More</button> */}
                 </div>
 
             </div>
