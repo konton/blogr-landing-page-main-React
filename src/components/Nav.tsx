@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css';
 import arrow from '../images/icon-arrow-light.svg'
+import burger from '../images/icon-hamburger.svg'
 import { Button } from './Button';
 
 const Nav = () => {
@@ -15,6 +16,11 @@ const Nav = () => {
                     <li className='link'><a href='#'>Contact</a> <img src={arrow}></img></li>
                 </ul>
             </div>
+            <div className="mright-nav disable">
+                <img src={burger} alt="" />
+                {/* <p className='login'>Login</p>
+                <Button class='sign'>Sign Up</Button> */}
+            </div> 
             <div className='right-nav'>
                 <p className='login'>Login</p>
                 <Button class='sign'>Sign Up</Button>

@@ -1,6 +1,6 @@
 import React from 'react'
 import desk from '../../images/illustration-editor-desktop.svg'
-
+import mobile from '../../images/illustration-editor-mobile.svg'
 const FirstContent = () => {
 
     return (
@@ -21,7 +21,8 @@ const FirstContent = () => {
                             by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
                     </div>
                 </div>
-                <img src={desk}></img>
+                <img src={desk} className="edit-desk"></img>
+                <img src={mobile} className="edit-mobile"></img>
             </div>
 
         </div>

@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import desktop from '../../images/illustration-laptop-desktop.svg'
-
+import mobile from '../../images/illustration-laptop-mobile.svg'
 const ThridContent = () => {
 
     return (
         <div className="third">
             <div className="third-con">
-                <img src={desktop}></img>
+                <img src={desktop} className="laptopdesk"></img>
+                <img src={mobile} className="laptopmobile"></img>
                 <div className="third-con-para">
                     <div className="third-con-para-one">
                         <h3>Free, open, simple</h3>

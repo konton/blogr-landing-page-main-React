@@ -9,7 +9,7 @@ const Title = () => {
         <div className='title'>
             <div className="header">
                 <h1>A modern publishing platform</h1>
-                Grow your audience and build your online brand
+                <p>Grow your audience and build your online brand</p>
                 <div className="header-btn">
                     <Button class='startbtn'>Start for Free</Button>
                     <Button class='learnbtn'>Learn More</Button>
